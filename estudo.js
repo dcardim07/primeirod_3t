@@ -31,13 +31,19 @@ function total(){
     document.getElementById("meses").focus();
     return;
    }
-  }
-
+ let mes = "";
   for(let i = 1; i <= t; i++){
       r = c * (1 + (j/100));
-      document.write("Mês " + i + " valor: " + moeda(r) +"<br>");
-      c = moeda(r);
-  }
-  document.write("Resultado: " + moeda(r));
 
+     mes += "Mês " + i + " / " + " valor: " +moeda(r) + "<br>";
+
+      c = r;
+  }
+  document.getElementById("mes").innerHTML=mes
+
+  document.getElementById("total").innerHTML="Total: "+moeda(r);
   
+}
+  
+
+
