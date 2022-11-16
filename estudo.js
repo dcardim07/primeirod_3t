@@ -1,3 +1,4 @@
+
 function moeda(atual){
   return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
   }
@@ -80,4 +81,22 @@ function moeda(atual){
     let r = Number(val1) * Number(p);
     document.getElementById("resultado").innerHTML = r;
   }
-Footer
+
+function calculaRaiz() {
+  let a = document.getElementById("a").value;
+  let b = document.getElementById("b").value;
+  let c = document.getElementById("c").value;
+  let delta, raiz, x1, x2;
+delta = (b*b) - (4*a*c);
+if(delta >= 0) {
+  raiz = Math.sqrt(delta);
+  x1 = ((-b)+raiz)/(2*a);
+  x2 = ((-b)-raiz)/(2*a);
+  raiz = "x1="+x1+" x2="+x2;
+}else {
+  raiz = "não tem raiz real"
+}
+
+document.getElementById("raiz").innerHTML = raiz;
+  
+}
