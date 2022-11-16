@@ -1,9 +1,37 @@
-#calculadora {
-    background: rgb(219, 117, 134);
+#calculadoraESQ {
+
+    background: #6d6b13;
     width: 200px;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 5px 5px  rgb(87, 82, 9);
+
+}
+
+
+#calculadora {
+    background: #1d4e4e;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px  rgb(20, 38, 39);
+}
+.spMes {
+  border-color: black;
+  border-width: 1px;
+  border-style: dashed;
+  background: rgb(19, 13, 53);
+  color: rgb(104, 212, 255);
+  text-align: start;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+}
+#calculadora input:focus {
+  background: black;
+  color: white;
 }
 #calculadora input{
 background: darkgrey;
@@ -44,4 +72,6 @@ h3 {
 #input-calcF:checked + #calculadora .calcF {
     display: block;
 }
+
+
 Footer
